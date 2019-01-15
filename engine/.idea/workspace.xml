@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc0a61e7-5e6a-4f54-b97b-b0a144de676b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/faces/12345678/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/faces/12345678/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/faces/12345678/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/faces/12345678/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/faces/12345678/5.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/face_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/face_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/face_post.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../static/js/component/login-data/login-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/component/login-data/login-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../static/js/component/logout-data/logout-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/component/logout-data/logout-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../static/js/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../template/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,6 +93,24 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1912452">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="15" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="engine" />
@@ -112,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataset_creator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="323">
               <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -124,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/face_recognition.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="164" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
+            <state relative-caret-position="340">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -145,7 +153,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/camera.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="221">
               <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
             </state>
           </provider>
@@ -212,6 +220,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,7 +242,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -485,6 +493,16 @@
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_creator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/face_post.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -494,25 +512,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/camera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="221">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_creator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/face_recognition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="164" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
+        <state relative-caret-position="340">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

@@ -163,3 +163,10 @@ button.btn {
     width: 150px;
 }
 
+#label {
+    font-family: 'Varela-Round';
+    color: #F5F5F5;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

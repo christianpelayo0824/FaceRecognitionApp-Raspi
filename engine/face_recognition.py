@@ -114,8 +114,6 @@ def start_recognize():
                                 cv2.FONT_HERSHEY_PLAIN, 1.7, color, stroke,
                                 cv2.LINE_AA)
                     # Push Available state
-                    if state[0] == 0:  # Take note here there is a hole
-                        state.append(labels_faces[pred].capitalize())
                     if state[0] != str(labels_faces[pred].capitalize()):
                         if sys.argv[1] == "1":
                             face_post_module.login_employee_by_id(data['employee_id'])
@@ -130,13 +128,7 @@ def start_recognize():
                                 'id': str(data['employee_id'])
                             }))
                         # Pop available state if they are not the same
-                        state.pop(0)
-                        print(json.dumps({
-                            'status': 'POPPPPPPPPPPPPP',
-                            "state": str(state[0])
-
-                        }))
-                        state.append(labels_faces[pred].capitalize())
+                        state[0] = labels_faces[pred].capitalize()
                         print(json.dumps({
                             'status': 'HEREEEEEEEEEEE',
                             "state": str(state[0])
@@ -148,11 +140,6 @@ def start_recognize():
                                 (faces_coord[i][0], faces_coord[i][1]),
                                 cv2.FONT_HERSHEY_PLAIN, 1.7, color, stroke,
                                 cv2.LINE_AA)
-
-        # print(json.dumps({
-        #     "test": sys.argv[1],
-        #     "state": str(state[0])
-        # }))
 
         if sys.argv[1] == "1":
             if state[0] != 0:

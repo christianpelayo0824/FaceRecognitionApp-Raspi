@@ -11,7 +11,7 @@ BASE_URL = 'http://172.20.10.9:8080/shot.jpg'
 class Camera(object):
 
     def __init__(self):
-        self.video = cv2.VideoCapture(1)
+        self.video = cv2.VideoCapture(0)
 
     def __del__(self):
         self.video.release()

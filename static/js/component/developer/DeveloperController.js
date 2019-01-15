@@ -1,3 +1,0 @@
-mainApp.controller('DeveloperController', function () {
-
-})

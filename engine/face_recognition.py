@@ -13,9 +13,12 @@ import sys
 from lib.camera import Camera
 from lib.face_detector import FaceDetector
 
-DATABASE_DIR = './engine/database/faces/'
-FACE_CASCADES = './engine/cascades/data/haarcascade_frontalface_alt.xml'
+# DATABASE_DIR = '../FaceRecognitionApp---Thesis/engine/database/faces/'
+# FACE_CASCADES = './engine/cascades/data/haarcascade_frontalface_alt.xml'
 
+# Outsource Database
+DATABASE_DIR = '../database/faces/'
+FACE_CASCADES = './engine/cascades/data/haarcascade_frontalface_alt.xml'
 
 # For Testing
 # DATABASE_DIR = '../engine/database/faces/'

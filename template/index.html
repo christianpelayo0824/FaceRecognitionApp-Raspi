@@ -10,40 +10,13 @@
 </head>
 
 <body ng-app="mainApp">
-    <div class="row" id="main-row">
-        <div class="col-lg-3" id="sidebar-col">
-            <div id="header-wrapper">
-                <center>
-                    <img src="../static/icons/icons8-mind-map-100.png" alt="">
-                    <h5>EMPLOYEE MONITORING</h5>
-                    <h6>SMART - GATE</h6>
-                </center>
-            </div>
-            <hr id="separator">
-            <div id="button-wrapper">
-                <a href="#!/landingPage" class="btn btn-primary" id="first-btn">
-                    <p><img src="../static/icons/icons8-circled-menu-23.png" alt=""><span></span>Home</p>
-                </a>
-                <br>
-                <a href="#!/dashboard" class="btn btn-primary" id="second-btn">
-                    <p><img src="../static/icons/icons8-speed-23.png" alt=""> <span></span>Dashboard</p>
-                </a>
-                <br>
-                <!-- <a href="#!/recognize" class="btn btn-primary" id="third-btn">
-                    <p><img src="../static/icons/icons8-settings-23.png" alt=""> <span></span>Settings </p>
-                </a>
-                <br> -->
-                <a href="#!/developer" class="btn btn-primary" id="fourth-btn">
-                    <p><img src="../static/icons/icons8-source-code-23.png" alt=""> <span></span>Developer</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-9" id="main-col">
-            <div id="main-view-wrapper">
-                <ng-view></ng-view>
-            </div>
+
+    <div class="" id="main-col">
+        <div id="main-view-wrapper">
+            <ng-view></ng-view>
         </div>
     </div>
+
 
     <!-- Static Library -->
     <script src="../static/js/lib/angular.min.js"></script>
@@ -51,29 +24,15 @@
     <script src="../static/js/lib/angular-animate.min.js"></script>
     <script src="../static/js/lib/particles.min.js"></script>
     <script src="../static/js/app.js"></script>
-    
+
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../static/js/config.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../static/js/lib/bootstrap-datepicker.min.js "></script>
     <script src="../node_modules/sweetalert/dist/sweetalert.min.js"></script>
 
-    <!-- Angular Pages -->
-    <script src="../static/js/component/dashboard/Dashboard.js"></script>
-    <script src="../static/js/component/landing-page/LandingPage.js"></script>
-
     <!-- Controller -->
-    <script src="../static/js/component/service/ServiceController.js"></script>
-    <script src="../static/js/component/add-faces/AddFacesController.js"></script>
-    <script src="../static/js/component/add-faces-two/AddFacesTwoController.js"></script>
-    <script src="../static/js/component/add-faces-three/AddFacesThreeController.js"></script>
-    <script src="../static/js/component/data-page/DataController.js"></script>
-    <script src="../static/js/component/form/FormController.js"></script>
-    <script src="../static/js/component/recognize/RecognizeController.js"></script>
-    <script src="../static/js/component/developer/DeveloperController.js"></script>
-    <script src="../static/js/component/central-data/CentralDataController.js"></script>
-    <script src="../static/js/component/login-data/LoginDataController.js"></script>
-    <script src="../static/js/component/logout-data/LogoutDataController.js"></script>
+    <script src="../static/js/component/landing-page/LandingPage.js"></script>
 
     <!-- Services -->
     <script src="../static/js/services/FaceInformationService.js"></script>

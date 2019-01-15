@@ -1,0 +1,2 @@
+# FaceRecognitionApp-Thesis
+# FaceRecognitionApp-Raspi

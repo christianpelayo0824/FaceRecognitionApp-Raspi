@@ -1,0 +1,39 @@
+<section ng-controller="FormController" id="form-main-section">
+    <div class="container">
+        <h1 class="title"><span><img id="back-icon" src="../static/icons/icons8-go-back-28.png" alt="" ng-click="redirectToHome()"></span>
+            Update</h1>
+        <center>
+            <div id="update-form-wrapper">
+                <!-- <h4>Personal Information</h4> -->
+                <form>
+                    <label for="#read-only-employee-id">Employee ID</label>
+                    <input type="number" class="form-control" placeholder="Employee ID" ng-model='emp.employeeid' id="read-only-employee-id" readonly="true">
+                    <!-- <hr id="separator"> -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="#firstname">Firstname</label>
+                            <input type="text" class="form-control" placeholder="Firstname" ng-model='emp.firstname' id="firstname">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="#lastname">Lastname</label>
+                            <input type="text" class="form-control" placeholder="Lastname" ng-model='emp.lastname' id="lastname">
+                        </div>
+                    </div>
+                    <label for="#phone">Phone</label>
+                    <input type="number" class="form-control" placeholder="Phone" ng-model='emp.phone' id="phone">
+                    <label for="#email">Email</label>
+                    <input type="email" class="form-control" placeholder="Email" ng-model='emp.email' id="email">
+                    <hr id="separator">
+                    <label for="#department">Deparment</label>
+                    <input type="text" class="form-control" placeholder="Deparment" ng-model='emp.department' id="department">
+                    <label for="#position">Position</label>
+                    <input type="text" class="form-control" placeholder="Position" ng-model='emp.position' id="position">
+                    <div id="update-btn-wrapper">
+                        <a class="btn btn-primary" id="update-btn" ng-click="updateButton()">Update</a>
+                    </div>
+                </form>
+            </div>
+        </center>
+        <br>
+    </div>
+</section>

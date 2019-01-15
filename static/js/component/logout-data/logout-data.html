@@ -1,0 +1,40 @@
+<section ng-controller="LogoutDataController" id="logout-data-section">
+    <div class="container">
+        <h1 class="title"><span><img id="back-icon" src="../static/icons/icons8-go-back-28.png" alt="" ng-click="redirectToData()"></span>
+            Logout Data</h1>
+        <br>
+        <div id="logout-data-search">
+
+        </div>
+        <br>
+        <div id="logout-table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <!-- <th scope="col">Station</th> -->
+                        <th scope="col">Firstname</th>
+                        <th scope="col">Lastname</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Logout - Date | Time</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="logoutEmp in logoutEmployee">
+                        <!-- <td>{{emp.id}}</td> -->
+                        <td>{{logoutEmp.employeeId}}</td>
+                        <!-- <td>{{loginEmp.empCareerProfile.station}}</td> -->
+                        <td>{{logoutEmp.employeeCareerProfile.employee.firstname}}</td>
+                        <td>{{logoutEmp.employeeCareerProfile.employee.lastname}}</td>
+                        <td>{{logoutEmp.employeeCareerProfile.position}}</td>
+                        <td>{{logoutEmp.employeeCareerProfile.department}}</td>
+                        <td>{{logoutEmp.date_time | date:"MM/dd/yyyy 'at' h:mma"}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

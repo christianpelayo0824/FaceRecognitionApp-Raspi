@@ -1,0 +1,51 @@
+<section ng-controller="AddFacesThreeController" id="add-faces-three-main-section">
+    <div class="container">
+        <h1 class="title"><span><img id="back-icon" src="../static/icons/icons8-go-back-28.png" alt="" ng-click="redirectToHome()"></span>
+            Add Faces</h1>
+
+        <center>
+            <div id="progress-bar-wrapper">
+                <ul id="progress-bar-three">
+                    <li class="active">Personal</li>
+                    <li class="active-two">Job</li>
+                    <li class="active-three">Capture</li>
+                </ul>
+            </div>
+        </center>
+        <center>
+            <div id="form-wrapper">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div id="employee-info-wrapper">
+                            <h6>EmployeeID: {{emp.employeeid}}</h6>
+                            <h6>Firstname: {{emp.firstname}}</h6>
+                            <h6>Lastname: {{emp.lastname}}</h6>
+                            <h6>Phone: {{emp.phone}}</h6>
+                            <h6>Email: {{emp.email}}</h6>
+                            <h6>Department: {{emp.department}}</h6>
+                            <h6>Postion: {{emp.position}}</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Capture Image</h4>
+                        <div class="capture-image-wrapper">
+                            <div id="capture-box"></div>
+                            <a class="btn btn-primary" id="capture-btn" ng-click="createDataset()">Create Dataset</a>
+                        </div>
+                    </div>
+                </div>
+                <hr id="separator">
+                <p>{{datasetProgress}}</p>
+                <div class="progress" id="progressBar">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100" id="progress-bar-status">{{progressLabel}}</div>
+                </div>
+                <br>
+                <div id="btn-wrapper">
+                    <a class="btn btn-primary" id="back-btn" ng-click='backButton()'>Back</a>
+                </div>
+            </div>
+        </center>
+        <br>
+    </div>
+</section>

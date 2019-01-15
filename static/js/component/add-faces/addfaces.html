@@ -1,0 +1,70 @@
+<section ng-controller="AddFacesController" id="addfaces-main-section">
+    <div class="container">
+        <h1 class="title"><span><img id="back-icon" src="../static/icons/icons8-go-back-28.png" alt="" ng-click="redirectToHome()"></span>
+            Add Faces</h1>
+
+        <center>
+            <div id="progress-bar-wrapper">
+                <ul id="progress-bar-one">
+                    <li class="active">Personal</li>
+                    <li class="active-two">Job</li>
+                    <li>Capture</li>
+                </ul>
+            </div>
+        </center>
+        <center>
+            <div id="form-wrapper">
+                <h4>Personal Information</h4>
+                <form>
+                    <label for="#employee-id">Employee ID</label>
+                    <input type="number" class="form-control" placeholder="Employee ID" ng-model='emp.employeeid' id="employee-id">
+                    <!-- <hr id="separator"> -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="#employee-id">Firstname</label>
+                            <input type="text" class="form-control" placeholder="Firstname" ng-model='emp.firstname' id="firstname">
+                        </div>
+                        <div class="col-lg-6">
+
+                            <label for="#employee-id">Lastname</label>
+                            <input type="text" class="form-control" placeholder="Lastname" ng-model='emp.lastname' id="lastname">
+                        </div>
+                    </div>
+                    <label for="#employee-id">Phone</label>
+                    <input type="number" class="form-control" placeholder="Phone" ng-model='emp.phone' id="phone">
+                    <label for="#employee-id">Email</label>
+                    <input type="email" class="form-control" placeholder="Email" ng-model='emp.email' id="email">
+                    <div id="btn-wrapper">
+                        <a class="btn btn-primary" id="next-btn" ng-click="nextButton(emp)">Next</a>
+                    </div>
+                </form>
+            </div>
+        </center>
+        <br>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="triggerModal"
+        hidden="hidden"></button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" id="warningModal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalMessage">{{modalContent}}</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

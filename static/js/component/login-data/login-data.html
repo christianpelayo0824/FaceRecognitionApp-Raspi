@@ -1,0 +1,53 @@
+<section ng-controller="LoginDataController" id="login-data-section">
+    <div class="container">
+        <div>
+            <h1 class="title"><span><img id="back-icon" src="../static/icons/icons8-go-back-28.png" alt="" ng-click="redirectToData()"></span>
+                Login Data</h1>
+            <br>
+            <div id="login-data-search">
+                <!-- <div class="container">
+                    <div class="row">
+                        <div class='col-sm-6'>
+                            <input type='text' class="form-control" id='datetimepicker4' />
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#datetimepicker4').datetimepicker();
+                            });
+                        </script>
+                    </div>
+                </div> -->
+            </div>
+            <br>
+            <div id="login-table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <!-- <th scope="col">Station</th> -->
+                            <th scope="col">Firstname</th>
+                            <th scope="col">Lastname</th>
+                            <th scope="col">Position</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Login - Date | Time</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="loginEmp in loginEmployee">
+                            <!-- <td>{{emp.id}}</td> -->
+                            <td>{{loginEmp.empCareerProfile.employee_id}}</td>
+                            <!-- <td>{{loginEmp.empCareerProfile.station}}</td> -->
+                            <td>{{loginEmp.empCareerProfile.employee.firstname}}</td>
+                            <td>{{loginEmp.empCareerProfile.employee.lastname}}</td>
+                            <td>{{loginEmp.empCareerProfile.position}}</td>
+                            <td>{{loginEmp.empCareerProfile.department}}</td>
+                            <td>{{loginEmp.dateTime | date:"MM/dd/yyyy 'at' h:mma"}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,39 @@
+<section ng-controller="CentralDataController" id="central-data-section">
+    <div class="container">
+        <h1 class="title"><span><img id="back-icon" src="../static/icons/icons8-go-back-28.png" alt="" ng-click="redirectToData()"></span>
+            Central Data</h1>
+        <br>
+        <br>
+        <div id="table-wrapper">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Station</th>
+                        <th scope="col">Firstname</th>
+                        <th scope="col">Lastname</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Operation</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="emp in employee">
+                        <!-- <td>{{emp.id}}</td> -->
+                        <td>{{emp.employee_id}}</td>
+                        <td>{{emp.station}}</td>
+                        <td>{{emp.employee.firstname}}</td>
+                        <td>{{emp.employee.lastname}}</td>
+                        <td>{{emp.position}}</td>
+                        <td>{{emp.department}}</td>
+                        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"
+                                ng-click="updateCareerProfile(emp)">UPDATE</button>
+                            | <button class="btn btn-warning" data-toggle="modal" data-target="#deleteModal" ng-click="deleteCareerProfile(emp)">DELETE</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

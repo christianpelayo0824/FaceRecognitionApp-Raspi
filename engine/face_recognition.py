@@ -20,6 +20,7 @@ from lib.face_detector import FaceDetector
 DATABASE_DIR = '../database/faces/'
 FACE_CASCADES = './engine/cascades/data/haarcascade_frontalface_alt.xml'
 
+
 # For Testing
 # DATABASE_DIR = '../engine/database/faces/'
 # FACE_CASCADES = 'cascades/data/haarcascade_frontalface_alt.xml'
@@ -87,8 +88,8 @@ def start_recognize():
     while True:
         stroke = 1
         color = (136, 150, 0)
-        cv2.namedWindow('Frame', cv2.WND_PROP_FULLSCREEN)
-        cv2.setWindowProperty('Frame', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+        cv2.namedWindow('Frame', cv2.WINDOW_NORMAL)
+        cv2.setWindowProperty('Frame', cv2.WINDOW_NORMAL, cv2.WINDOW_NORMAL)
         frame = video.get_frame()
         # frame = video.ip_camera(True)
         faces_coord = detector.detect(frame, False)
@@ -105,9 +106,9 @@ def start_recognize():
                     # Fetch data from face_entity the data from database
                     # to filter the first_name using uid
                     data = face_entity.get_face_profile(labels_faces[pred].capitalize())
-                    print(json.dumps({
-                        'code': str(data)
-                    }))
+                    # print(json.dumps({
+                    #     'code': str(data)
+                    # }))
 
                     cv2.putText(frame, data['firstname'] + ' | ' + str(round(conf)),
                                 (faces_coord[i][0], faces_coord[i][1] - 2),
@@ -119,7 +120,7 @@ def start_recognize():
                             face_post_module.login_employee_by_id(data['employee_id'])
                             print(json.dumps({
                                 'status': 'IN',
-                                'id': str(data['employee_id'])
+                                'data': data
                             }))
                         if sys.argv[1] == "0":
                             face_post_module.logout_employee_by_id(data['employee_id'])
@@ -129,34 +130,32 @@ def start_recognize():
                             }))
                         # Pop available state if they are not the same
                         state[0] = labels_faces[pred].capitalize()
-                        print(json.dumps({
-                            'status': 'HEREEEEEEEEEEE',
-                            "state": str(state[0])
-
-                        }))
-
                 else:
                     cv2.putText(frame, "Unknown",
                                 (faces_coord[i][0], faces_coord[i][1]),
                                 cv2.FONT_HERSHEY_PLAIN, 1.7, color, stroke,
                                 cv2.LINE_AA)
 
-        if sys.argv[1] == "1":
-            if state[0] != 0:
-                data = face_entity.get_face_profile(state[0])
-                cv2.putText(frame, str(data['firstname'] + ' ' + data['lastname']).upper(),
-                            (5, frame.shape[0] - 10),
-                            cv2.FONT_HERSHEY_PLAIN, 3, color, 3, cv2.LINE_AA)
-        else:
-            if state[0] != 0:
-                data = face_entity.get_face_profile(state[0])
-                cv2.putText(frame, str(data['firstname'] + ' ' + data['lastname']).upper(),
-                            (5, frame.shape[0] - 10),
-                            cv2.FONT_HERSHEY_PLAIN, 3, color, 3, cv2.LINE_AA)
+        # if sys.argv[1] == "1":
+        #     if state[0] != 0:
+        #         data = face_entity.get_face_profile(state[0])
+        #         cv2.putText(frame, str(data['firstname'] + ' ' + data['lastname']).upper(),
+        #                     (5, frame.shape[0] - 10),
+        #                     cv2.FONT_HERSHEY_PLAIN, 3, color, 3, cv2.LINE_AA)
+        #
+        # else:
+        #     if state[0] != 0:
+        #         data = face_entity.get_face_profile(state[0])
+        #         cv2.putText(frame, str(data['firstname'] + ' ' + data['lastname']).upper(),
+        #                     (5, frame.shape[0] - 10),
+        #                     cv2.FONT_HERSHEY_PLAIN, 3, color, 3, cv2.LINE_AA)
 
         cv2.imshow('Frame', frame)
 
         if cv2.waitKey(100) & 0xFF == 27:
+            print(json.dumps({
+                'status': 'exit'
+            }))
             sys.exit()
 
 

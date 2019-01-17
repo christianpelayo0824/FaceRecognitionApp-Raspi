@@ -13,12 +13,14 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         width: 1000,
         height: 650,
-        resizable: false
+        resizable: true
     })
+    //mainWindow.setFullScreen(true);
+
     mainWindow.loadURL(`file://${__dirname}/template/index.html`)
-    mainWindow.openDevTools({
-        mode: 'undocked'
-    })
+    // mainWindow.openDevTools({
+    //     mode: 'undocked'
+    // })
     mainWindow.on('closed', function () {
         mainWindow = null
     })

@@ -1,4 +1,5 @@
-mainApp.controller('LandingPageController', function ($scope) {
+mainApp.controller('LandingPageController', function ($scope, $window) {
+
     particlesJS.load('particles-js', '../static/js/particle.json', function () {
         console.log('particles.js loaded - callback');
     });
@@ -20,7 +21,7 @@ mainApp.controller('LandingPageController', function ($scope) {
         py.on('message', function (message) {
             var data = JSON.stringify(message);
             var object = JSON.parse(data);
-            console.log(object);
+            // console.log(object);
             if (object.status == 'isEmpty') {
                 swal({
                     title: "Error!",
@@ -34,7 +35,6 @@ mainApp.controller('LandingPageController', function ($scope) {
 
     $scope.logoutMode = function () {
         console.log("Hit")
-
         var python = require('python-shell');
         var options = {
             mode: 'json',
@@ -49,7 +49,16 @@ mainApp.controller('LandingPageController', function ($scope) {
         py.on('message', function (message) {
             var data = JSON.stringify(message);
             var object = JSON.parse(data);
-            console.log(object);
+            // console.log(object);
+
+            if (object.status == 'OUT') {
+                swal({
+                    title: "Error!",
+                    text: "Atleast one person added to the system.",
+                    icon: "error",
+                });
+            }
+
             if (object.status == 'isEmpty') {
                 swal({
                     title: "Error!",

@@ -4,7 +4,12 @@
     <list default="true" id="fc0a61e7-5e6a-4f54-b97b-b0a144de676b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/js/component/landing-page/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/component/landing-page/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/js/component/landing-page/landingpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/component/landing-page/landingpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../template/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,18 +101,23 @@
     <session id="-1912452">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="15" />
+          <entry key="py" value="196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="15" />
+          <entry key="Python" value="196" />
         </counts>
       </usages-collector>
     </session>
@@ -132,8 +142,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/face_recognition.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="323">
+              <caret line="131" column="66" selection-start-line="131" selection-start-column="66" selection-end-line="131" selection-end-column="66" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -144,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/face_post.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="374">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -153,8 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/camera.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="306">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -202,17 +212,17 @@
         <option value="$PROJECT_DIR$/lib/face_entity.py" />
         <option value="$PROJECT_DIR$/remove_face.py" />
         <option value="$PROJECT_DIR$/lib/login_face_post.py" />
-        <option value="$PROJECT_DIR$/lib/camera.py" />
         <option value="$PROJECT_DIR$/lib/face_post.py" />
         <option value="$PROJECT_DIR$/dataset_creator.py" />
+        <option value="$PROJECT_DIR$/lib/camera.py" />
         <option value="$PROJECT_DIR$/face_recognition.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1361" />
-    <option name="width" value="1370" />
-    <option name="height" value="773" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1366" />
+    <option name="width" value="1360" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -220,7 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,6 +251,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -505,22 +515,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/face_post.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="374">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/camera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="306">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/face_recognition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="131" column="66" selection-start-line="131" selection-start-column="66" selection-end-line="131" selection-end-column="66" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

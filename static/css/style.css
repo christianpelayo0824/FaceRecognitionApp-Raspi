@@ -52,8 +52,9 @@ button.btn {
 /* Landing Page */
 #landingpage-main-section {
     background-color: #0B0C10;
-    height: 650px;
-    background-image: url('../img/acastro_170919_2003_0001.0.jpg');
+    /* background-image: url('../img/acastro_170919_2003_0001.0.jpg'); */
+    height: 100%;
+    width: 100%;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,7 +67,7 @@ button.btn {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: black;
+    /* background-color: black; */
     opacity: .77;
 }
 
@@ -88,6 +89,7 @@ button.btn {
 #upper-content {
     height: 300px;
     /* border-bottom: 1px solid #03a9f4; */
+    margin-top: 30px;
 }
 
 #upper-content-wrapper {
@@ -136,18 +138,25 @@ button.btn {
 }
 
 #card-box {
-    background-color: #212121;
+    background-color: #263238;
     height: 190px;
     width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    opacity: .68;
 }
 
 #card-box:hover {
     border: 2px solid #03a9f4;
 }
+
+@media only screen and (max-width: 1000px) {
+    #card-box {
+        margin-bottom: 20px;
+    }
+  }
 
 #image-box > img{
     height: 80px;
@@ -170,3 +179,23 @@ button.btn {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+#back-icon:hover {
+    border: 1px solid #03a9f4;
+    border-radius: 100px;
+}
+
+#name {
+    text-transform: uppercase;
+    font-family: 'Montserrat-Light';
+    font-size: 60px;
+    font-weight: 300;
+    color: #00BCD4;
+}
+
+#info-wrapper {
+    margin-top: 60px;
+}
+
+
+

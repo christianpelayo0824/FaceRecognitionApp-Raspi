@@ -11,6 +11,10 @@ mainApp.config(['$routeProvider', function ($routeProvider) {
             templateUrl: '../static/js/component/login/login.html',
             controller: 'LoginController'
         }).
+        when('/logout', {
+            templateUrl: '../static/js/component/logout/logout.html',
+            controller: 'LoginController'
+        }).
         otherwise({
             redirectTo: '/landingPage'
         });

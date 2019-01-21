@@ -126,7 +126,7 @@ def start_recognize():
                             face_post_module.logout_employee_by_id(data['employee_id'])
                             print(json.dumps({
                                 'status': 'OUT',
-                                'id': str(data['employee_id'])
+                                'data': data
                             }))
                         # Pop available state if they are not the same
                         state[0] = labels_faces[pred].capitalize()
@@ -135,6 +135,9 @@ def start_recognize():
                                 (faces_coord[i][0], faces_coord[i][1]),
                                 cv2.FONT_HERSHEY_PLAIN, 1.7, color, stroke,
                                 cv2.LINE_AA)
+                    print(json.dumps({
+                        'status': 'UNKNOWN',
+                    }))
 
         # if sys.argv[1] == "1":
         #     if state[0] != 0:

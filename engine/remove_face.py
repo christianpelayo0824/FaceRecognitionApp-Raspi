@@ -4,9 +4,11 @@ import shutil
 import sys
 
 
+
 def remove_face():
     # DATABASE_DIR = '../engine/database/faces/'
-    DATABASE_DIR = './engine/database/faces/'
+    # DATABASE_DIR = './engine/database/faces/'
+    DATABASE_DIR = '../database/faces/'
 
     if not os.path.exists(DATABASE_DIR):
         print(json.dumps({

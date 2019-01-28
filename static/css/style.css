@@ -194,8 +194,12 @@ button.btn {
 }
 
 #info-wrapper {
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
-
-
+/* Modal */
+#exampleModalLongTitle,
+#exampleFormControlTextarea1 {
+    font-family: 'Montserrat-Light';
+    color: #212121;
+}

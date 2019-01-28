@@ -117,13 +117,17 @@ def start_recognize():
                     # Push Available state
                     if state[0] != str(labels_faces[pred].capitalize()):
                         if sys.argv[1] == "1":
-                            face_post_module.login_employee_by_id(data['employee_id'])
+                            # face_post_module.login_employee_by_id(data['employee_id'])
                             print(json.dumps({
                                 'status': 'IN',
                                 'data': data
                             }))
                         if sys.argv[1] == "0":
-                            face_post_module.logout_employee_by_id(data['employee_id'])
+                            # if face_post_module.get_current_time_gap(data['employee_id'] == False):
+                            #     print(json.dumps({
+                            #         'status': "TEST"
+                            #     }))
+                            # face_post_module.logout_employee_by_id(data['employee_id'])
                             print(json.dumps({
                                 'status': 'OUT',
                                 'data': data
@@ -138,20 +142,6 @@ def start_recognize():
                     print(json.dumps({
                         'status': 'UNKNOWN',
                     }))
-
-        # if sys.argv[1] == "1":
-        #     if state[0] != 0:
-        #         data = face_entity.get_face_profile(state[0])
-        #         cv2.putText(frame, str(data['firstname'] + ' ' + data['lastname']).upper(),
-        #                     (5, frame.shape[0] - 10),
-        #                     cv2.FONT_HERSHEY_PLAIN, 3, color, 3, cv2.LINE_AA)
-        #
-        # else:
-        #     if state[0] != 0:
-        #         data = face_entity.get_face_profile(state[0])
-        #         cv2.putText(frame, str(data['firstname'] + ' ' + data['lastname']).upper(),
-        #                     (5, frame.shape[0] - 10),
-        #                     cv2.FONT_HERSHEY_PLAIN, 3, color, 3, cv2.LINE_AA)
 
         cv2.imshow('Frame', frame)
 

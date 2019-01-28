@@ -10,4 +10,15 @@ mainApp.service('LoginEmployeeService', ['$http', function ($http) {
             url: BASE_LINK + '/getAllLoginEmployee'
         })
     }
+
+    this.saveLoginEmployee = function(employeeId) {
+        return $http({
+            method: "POST",
+            url: BASE_LINK + "/saveLoginEmployee",
+            data: {
+                "employeeId": employeeId,
+                "physicalStation": "B"
+            }
+        })
+    }
 }]);

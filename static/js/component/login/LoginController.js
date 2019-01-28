@@ -1,4 +1,4 @@
-mainApp.controller('LoginController', function ($scope, $location) {
+mainApp.controller('LoginController', function ($scope, $location, LoginEmployeeService) {
 
 
     $scope.redirectToHome = function () {
@@ -33,7 +33,12 @@ mainApp.controller('LoginController', function ($scope, $location) {
             }
 
             if (message.status == 'IN') {
-                console.log(message.data.firstname);
+                // console.log("HIT" + message.data.employee_id)
+                // console.log(message.data.firstname);
+                LoginEmployeeService.saveLoginEmployee(message.data.employee_id)
+                    .then(function (response) {
+                        console.log("Status:" + response.status)
+                    })
                 var name = document.getElementById('name');
                 var position = document.getElementById('position');
                 var department = document.getElementById('department');

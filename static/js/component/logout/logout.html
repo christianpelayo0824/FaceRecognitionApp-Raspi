@@ -5,7 +5,7 @@
                 Logout Data</h1>
             <br>
             <center>
-                <button class="btn btn-primary" ng-click="logoutMode()">Recognize</button>
+                <button class="btn btn-primary" ng-click="logoutMode()" id="logoutModeBtn">Recognize</button>
             </center>
         </div>
         <div id="info-wrapper">
@@ -24,7 +24,7 @@
                 </div>
                 <br>
                 <div>
-                    <button class="btn btn-primary" id="emergencyBtn" ng-click="emergencyReason()">Emergency Out</button>
+                    <button class="btn btn-primary" id="emergencyBtn" ng-click="emergencyReason()">Emergency Reason</button>
                 </div>
                 <!-- <h1>000</h1> -->
             </center>
@@ -42,11 +42,11 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ng-model="reasonTextArea"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-primary" ng-click="submitReason(reasonTextArea)">Submit</button>
                 </div>
             </div>
         </div>

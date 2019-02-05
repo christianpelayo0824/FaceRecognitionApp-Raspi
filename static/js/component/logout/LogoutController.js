@@ -10,7 +10,24 @@ mainApp.controller('LogoutController', function ($scope, $location, LogoutEmploy
         $("#exampleModalCenter").modal("toggle");
     }
 
+    $scope.submitReason = function(data) {
+        // console.log(data);
+        LogoutEmployeeService.isSetEmergencyReason(data)
+            .then(function(response) {
+                console.log(response.status);
+            })
+        $("#exampleModalCenter").modal("hide");
+        swal({
+            title: "Success!",
+            text: "Reason validated!",
+            icon: "success"
+        });
+    }
+
     $scope.logoutMode = function () {
+
+        $("#logoutModeBtn").hide();
+
         console.log("Hit")
         var python = require('python-shell');
         var options = {
@@ -60,9 +77,17 @@ mainApp.controller('LogoutController', function ($scope, $location, LogoutEmploy
                 department.innerHTML = message.data.department;
             }
 
-            // if (message.status == 'False') {
-            //     $("#exampleModalCenter").modal("toggle");
-            // }
+            if (message.status == 'exit') {
+                $("#logoutModeBtn").show();
+                name.innerHTML = "UNKNOWN";
+                employee_id.innerHTML = "00000000";
+                position.innerHTML = "POSITION";
+                department.innerHTML = "DEPARTMENT";
+                status.innerHTML = "";
+                status.innerHTML = "STATUS";
+                status.style.color = "#FAFAFA";
+                $("#emergencyBtn").hide();
+            }
         })
     }
 });

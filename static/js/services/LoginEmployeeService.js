@@ -17,7 +17,7 @@ mainApp.service('LoginEmployeeService', ['$http', function ($http) {
             url: BASE_LINK + "/saveLoginEmployee",
             data: {
                 "employeeId": employeeId,
-                "physicalStation": "B"
+                "physicalStation": "A"
             }
         })
     }

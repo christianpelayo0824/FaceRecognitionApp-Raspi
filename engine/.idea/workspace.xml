@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc0a61e7-5e6a-4f54-b97b-b0a144de676b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/engine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_creator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_recognition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/face_entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/face_entity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/face_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/face_post.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../static/js/component/login/LoginController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/component/login/LoginController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../static/js/component/logout/LogoutController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/component/logout/LogoutController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../static/js/services/FaceInformationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/services/FaceInformationService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../static/js/services/LoginEmployeeService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/services/LoginEmployeeService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../static/js/services/LogoutEmployeeService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../static/js/services/LogoutEmployeeService.js" afterDir="false" />
-    </list>
+    <list default="true" id="fc0a61e7-5e6a-4f54-b97b-b0a144de676b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,12 +129,13 @@
     <session id="-281530463">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -181,8 +168,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/face_post.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="75">
+              <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -190,8 +177,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/face_entity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="75">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -202,8 +189,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/face_recognition.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <marker date="1549331367423" expanded="true" signature="4772:4773" ph="..." />
               </folding>
@@ -223,8 +210,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/arduino_adapter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <marker date="1549332654109" expanded="true" signature="251:256" ph="..." />
@@ -485,9 +472,9 @@
     <frame x="-1" y="25" width="1362" height="748" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5007752" side_tool="true" weight="0.24756919" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49642006" visible="true" weight="0.2737472" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49642006" visible="true" weight="0.2737472" />
       <window_info id="Structure" order="2" sideWeight="0.50358" side_tool="true" weight="0.24720775" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.1983871" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.4935484" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32419354" />
       <window_info anchor="bottom" id="Message" order="3" />
@@ -564,16 +551,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/face_post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/face_entity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="75">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -582,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/face_recognition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <marker date="1549331367423" expanded="true" signature="4772:4773" ph="..." />
           </folding>
@@ -599,19 +590,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/arduino_adapter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="210">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <marker date="1549332654109" expanded="true" signature="251:256" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/face_post.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

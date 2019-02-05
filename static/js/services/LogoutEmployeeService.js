@@ -1,4 +1,3 @@
-// Service for communicating service endpoint
 mainApp.service('LogoutEmployeeService', ['$http', function ($http) {
 
     // Rest endpoint base URL
@@ -18,6 +17,16 @@ mainApp.service('LogoutEmployeeService', ['$http', function ($http) {
             data: {
                 "employeeId": employeeId,
                 "physicalStation": "B"
+            }
+        })
+    }
+
+    this.isSetEmergencyReason = function (reason) {
+        return $http({
+            method: "POST",
+            url: BASE_LINK + "/isSetEmergencyReason",
+            data: {
+                "reason": reason
             }
         })
     }

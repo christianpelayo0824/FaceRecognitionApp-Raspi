@@ -10,10 +10,6 @@ from lib.face_detector import FaceDetector
 DATABASE_DIR = './engine/database/faces/'
 FACE_CASCADES = './engine/cascades/data/haarcascade_frontalface_alt.xml'
 
-# Testing
-# DATABASE_DIR = '../engine/database/faces/'
-# FACE_CASCADES = 'cascades/data/haarcascade_frontalface_alt.xml'
-
 
 def get_images(frame, faces_coord, shape):
     if shape == "rectangle":

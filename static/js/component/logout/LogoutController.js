@@ -19,7 +19,7 @@ mainApp.controller('LogoutController', function ($scope, $location, LogoutEmploy
             pythonOptions: ['-u'],
             scriptPath: './engine/',
             args: [0],
-            pathonPath: '/engine/venv/bin/python3.5'
+            pythonPath: './engine/venv/bin/python3.6'
         };
 
         var py = new python.PythonShell('/face_recognition.py', options);

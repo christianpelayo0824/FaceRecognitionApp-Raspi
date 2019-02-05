@@ -1,29 +1,19 @@
-from itertools import starmap
-
 import cv2
 import os
 import lib.face_corrector as op
 import numpy as np
 import json
 import lib.face_entity as face_entity
-import lib.face_post as face_post_module
+import lib.arduino_adapter as arduino
 
 import sys
 
 from lib.camera import Camera
 from lib.face_detector import FaceDetector
 
-# DATABASE_DIR = '../FaceRecognitionApp---Thesis/engine/database/faces/'
-# FACE_CASCADES = './engine/cascades/data/haarcascade_frontalface_alt.xml'
-
 # Outsource Database
 DATABASE_DIR = '../database/faces/'
 FACE_CASCADES = './engine/cascades/data/haarcascade_frontalface_alt.xml'
-
-
-# For Testing
-# DATABASE_DIR = '../engine/database/faces/'
-# FACE_CASCADES = 'cascades/data/haarcascade_frontalface_alt.xml'
 
 
 def get_images(frame, faces_coord, shape):
@@ -106,9 +96,6 @@ def start_recognize():
                     # Fetch data from face_entity the data from database
                     # to filter the first_name using uid
                     data = face_entity.get_face_profile(labels_faces[pred].capitalize())
-                    # print(json.dumps({
-                    #     'code': str(data)
-                    # }))
 
                     cv2.putText(frame, data['firstname'] + ' | ' + str(round(conf)),
                                 (faces_coord[i][0], faces_coord[i][1] - 2),
@@ -117,17 +104,13 @@ def start_recognize():
                     # Push Available state
                     if state[0] != str(labels_faces[pred].capitalize()):
                         if sys.argv[1] == "1":
-                            # face_post_module.login_employee_by_id(data['employee_id'])
                             print(json.dumps({
                                 'status': 'IN',
                                 'data': data
                             }))
+
+                            arduino.open_relay('i')
                         if sys.argv[1] == "0":
-                            # if face_post_module.get_current_time_gap(data['employee_id'] == False):
-                            #     print(json.dumps({
-                            #         'status': "TEST"
-                            #     }))
-                            # face_post_module.logout_employee_by_id(data['employee_id'])
                             print(json.dumps({
                                 'status': 'OUT',
                                 'data': data

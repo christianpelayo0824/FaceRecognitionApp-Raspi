@@ -2,7 +2,7 @@
 mainApp.service('EmployeeInformationService', ['$http', function ($http) {
 
     // Rest endpoint base URL
-    var BASE_LINK = 'http://localhost:8080/api/resource/career';
+    var BASE_LINK = 'http://10.42.0.1:8080/api/resource/career';
 
     // Update career profile rest end point as service
     this.updateCareerProfile = function (emplCareer) {
